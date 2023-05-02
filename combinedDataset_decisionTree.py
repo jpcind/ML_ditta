@@ -60,6 +60,10 @@ for i in range(len(y_test)):
 acc = correct / len(y_test)
 print("Accuracy of decision tree: {}".format(acc))
 
+print("training set")
+print(sklearn.metrics.classification_report(y_train, dTree.predict(X_train)))
+print("Test set")
+print(sklearn.metrics.classification_report(y_test,pred))
 
 
 # start value must be less than end value
