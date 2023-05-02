@@ -50,6 +50,15 @@ dTree = tree.DecisionTreeClassifier(criterion='entropy', max_depth=None)
 # score = dTree.score(X_test, y_test)
 # print("Accuracy of decision tree: {}".format(score))
 
+# print("X_train")
+# print(type(X_train))
+# print(X_train)
+# print()
+# print("y_train")
+# print(type(y_train))
+# print(y_train)
+
+
 dTree.fit(X_train, y_train)
 
 correct = 0
